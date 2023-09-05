@@ -1,0 +1,83 @@
+{% load otree %}
+
+<div class="card bg-light m-3">
+    <div class="card-body">
+    <h3>
+        Repeated Instructions - Block 5
+    </h3>
+
+    <p>
+        This is a repetition of the instructions you were shown on the previous page.
+    </p>
+    
+    <p>
+        In this study, you are in a randomly formed group of {{ Constants.players_per_group }} participants. 
+        Your group members will not change across rounds or blocks. 
+        Each participant in the group may choose one of three colors: green, purple, or yellow. Your
+        payoff at the end of each round depends on the color you choose and the colors chosen by the 
+        other participants.
+    </p>
+    <p>
+        The way payoffs are calculated will never change within a block, but they may change from block to block.  
+        In each block, you will be told whether payoffs are calculated the same way as in the previous block or if conditions changed.
+    </p>
+    <p>
+        This is Block #2 of six blocks of ten rounds each--a total of sixty rounds. 
+        One of these rounds will be randomly chosen at the end 
+        of the experiment to determine your payment.
+    </p>
+    <p>
+        For this block of ten rounds, the maximum payoff you can earn in any round is 28 points. 1 point is equivalent to $0.1.
+
+        The way payoffs are calculated is the same as in the previous block.
+    </p>
+
+
+    <p>
+        The diagram below portrays the information flow between
+        the {{ Constants.players_per_group }} participants. You 
+        {% if player.id_in_group == 1 %}
+            (Player Q)
+        {% elif player.id_in_group == 2 %}
+            (Player R)
+        {% elif player.id_in_group == 3 %}
+            (Player T)
+        {% elif player.id_in_group == 4 %}
+            (Player S)
+        {% else %}
+            ERROR
+        {% endif %}
+        will only see the colors chosen by the participants who are 
+        connected to you by a line in the displayed diagram (
+        {% if player.id_in_group == 1 %}
+            (Player R)
+        {% elif player.id_in_group == 2 %}
+            (Player Q and Player T)
+        {% elif player.id_in_group == 3 %}
+            (Player R and Player S)
+        {% elif player.id_in_group == 4 %}
+            (Player T)
+        {% else %}
+            ERROR
+        {% endif %}
+        ).
+        You will know only your own payoff, not the payoffs of any other participants.
+    </p>
+
+        
+        {% if player.id_in_group == 1 %}
+            <img align="middle" src="https://i.imgur.com/dg5vI74.png" width="300px" />
+        {% elif player.id_in_group == 2 %}
+            <img align="middle" src="https://i.imgur.com/OMEA2WX.png" width="300px" />
+        {% elif player.id_in_group == 3 %}
+            <img align="middle" src="https://i.imgur.com/r6XuoYr.png" width="300px" />
+        {% elif player.id_in_group == 4 %}
+            <img align="middle" src="https://i.imgur.com/K2hTFS9.png" width="300px" />
+        {% else %}
+            ERROR
+        {% endif %}
+
+
+    </div>
+</div>
+

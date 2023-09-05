@@ -1,0 +1,207 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Results - Block 4, Round {{ player.round_number }}
+{% endblock %}
+
+{% block content %}
+  
+    <p style="color:red">Maximum payoff: 28 points</p>
+
+    <table class="table-condensed" style="width:500px; margin-top:20px;">
+        <tr><td>Your choice:</td><td>{{ player.decision }}</td></tr>
+
+        <tr><td>Other participants' choices:</td><td>
+        {% if player.id_in_group == 1 %}
+            Player R - {{ others.0.decision }}</td></tr>
+            <tr><td></td><td>Player S - {{ others.2.decision }}</td></tr>
+            <tr><td></td><td>Player T - {{ others.1.decision }}</td></tr>
+        {% elif player.id_in_group == 2 %}
+            Player Q - {{ others.0.decision }}</td></tr>
+            <tr><td></td><td>Player S - {{ others.2.decision }}</td></tr>
+            <tr><td></td><td>Player T - {{ others.1.decision }}</td></tr>
+        {% elif player.id_in_group == 3 %}
+            Player Q - {{ others.0.decision }}</td></tr>
+            <tr><td></td><td>Player R - {{ others.1.decision }}</td></tr>
+            <tr><td></td><td>Player S - {{ others.2.decision }}</td></tr>
+        {% elif player.id_in_group == 4 %}
+            Player Q - {{ others.0.decision }}</td></tr>    
+            <tr><td></td><td>Player R - {{ others.1.decision }}</td></tr>
+            <tr><td></td><td>Player T - {{ others.2.decision }}</td></tr>
+        {% else %}
+            <tr><td></td><td>ERROR</td></tr>
+        {% endif %}
+
+     
+
+
+        <tr><td>Thus you earned:</td><td>{{ player.payoff }}</td></tr>
+
+        {% if player.id_in_group == 1 %}
+            <tr><td>
+                <div class="row" style="font-size:0px">
+                    <div class="column" style="font-size:0px">
+                        {% if player.decision == "Purple" %}
+                            <img src="https://i.imgur.com/GiubcvZ.png" width="100px">
+                        {% elif player.decision == "Green" %}
+                            <img src="https://i.imgur.com/jkDIQLz.png" width="100px">
+                        {% elif player.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/nxVBLCp.png" width="100px">
+                        {% endif %}
+                        {% if others.0.decision == "Purple" %}
+                            <img src="https://i.imgur.com/qqx7dGX.png" width="100px">
+                        {% elif others.0.decision == "Green" %}
+                            <img src="https://i.imgur.com/OrulaTv.png" width="100px">
+                        {% elif others.0.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/BfCmA6L.png" width="100px">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row" style="font-size:0px">
+                    <div class="column" style="font-size:0px">
+                        {% if others.2.decision == "Purple" %}
+                            <img src="https://i.imgur.com/hgEKjOj.png" width="100px">
+                        {% elif others.2.decision == "Green" %}
+                            <img src="https://i.imgur.com/aZMcGdj.png" width="100px">
+                        {% elif others.2.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/IK7CNev.png" width="100px">
+                        {% endif %}
+                        {% if others.1.decision == "Purple" %}
+                            <img src="https://i.imgur.com/DGEPNi9.png" width="100px">
+                        {% elif others.1.decision == "Green" %}
+                            <img src="https://i.imgur.com/8wKsnFI.png" width="100px">
+                        {% elif others.1.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/fEnM4FP.png" width="100px">
+                        {% endif %}
+                    </div>
+                </div>
+            </td><td></td></tr>
+        {% elif player.id_in_group == 2 %}
+            <tr><td>
+                <div class="row" style="font-size:0px">
+                    <div class="column" style="font-size:0px">
+                        {% if others.0.decision == "Purple" %}
+                            <img src="https://i.imgur.com/fVqvoFI.png" width="100px">
+                        {% elif others.0.decision == "Green" %}
+                            <img src="https://i.imgur.com/rgiLccl.png" width="100px">
+                        {% elif others.0.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/VD4joJK.png" width="100px">
+                        {% endif %}
+                        {% if player.decision == "Purple" %}
+                            <img src="https://i.imgur.com/58d70PF.png" width="100px">
+                        {% elif player.decision == "Green" %}
+                            <img src="https://i.imgur.com/KSWObQX.png" width="100px">
+                        {% elif player.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/EhmjNLv.png" width="100px">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row" style="font-size:0px">
+                    <div class="column" style="font-size:0px">
+                        {% if others.2.decision == "Purple" %}
+                            <img src="https://i.imgur.com/2S6k2ux.png" width="100px">
+                        {% elif others.2.decision == "Green" %}
+                            <img src="https://i.imgur.com/koYkzra.png" width="100px">
+                        {% elif others.2.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/0hriCkm.png" width="100px">
+                        {% endif %}
+                        {% if others.1.decision == "Purple" %}
+                            <img src="https://i.imgur.com/P8Hxzn3.png" width="100px">
+                        {% elif others.1.decision == "Green" %}
+                            <img src="https://i.imgur.com/YSKUtS5.png" width="100px">
+                        {% elif others.1.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/jNaNjYd.png" width="100px">
+                        {% endif %}
+                    </div>
+                </div>
+            </td><td></td></tr>
+        {% elif player.id_in_group == 3 %}
+            <tr><td>
+                <div class="row" style="font-size:0px">
+                    <div class="column" style="font-size:0px">
+                        {% if others.0.decision == "Purple" %}
+                            <img src="https://i.imgur.com/xUR8Qyj.png" width="100px">
+                        {% elif others.0.decision == "Green" %}
+                            <img src="https://i.imgur.com/xOB0omN.png" width="100px">
+                        {% elif others.0.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/QUU6c4x.png" width="100px">
+                        {% endif %}
+                        {% if others.1.decision == "Purple" %}
+                            <img src="https://i.imgur.com/8TlCg5r.png" width="100px">
+                        {% elif others.1.decision == "Green" %}
+                            <img src="https://i.imgur.com/sDUQ0Ep.png" width="100px">
+                        {% elif others.1.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/rs8kQAB.png" width="100px">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row" style="font-size:0px">
+                    <div class="column" style="font-size:0px">
+                        {% if others.2.decision == "Purple" %}
+                            <img src="https://i.imgur.com/Sz5nUou.png" width="100px">
+                        {% elif others.2.decision == "Green" %}
+                            <img src="https://i.imgur.com/uBmnFus.png" width="100px">
+                        {% elif others.2.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/qvgRMBt.png" width="100px">
+                        {% endif %}
+                        {% if player.decision == "Purple" %}
+                            <img src="https://i.imgur.com/mTqRklx.png" width="100px">
+                        {% elif player.decision == "Green" %}
+                            <img src="https://i.imgur.com/rWcF7As.png" width="100px">
+                        {% elif player.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/TVkx6ke.png" width="100px">
+                        {% endif %}
+                    </div>
+                </div>
+            </td><td></td></tr>
+        {% elif player.id_in_group == 4 %}
+            <tr><td>
+                <div class="row" style="font-size:0px">
+                    <div class="column" style="font-size:0px">
+                        {% if others.0.decision == "Purple" %}
+                            <img src="https://i.imgur.com/iN6OQBd.png" width="100px">
+                        {% elif others.0.decision == "Green" %}
+                            <img src="https://i.imgur.com/vyoVhtj.png" width="100px">
+                        {% elif others.0.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/eR7SmNp.png" width="100px">
+                        {% endif %}
+                        {% if others.1.decision == "Purple" %}
+                            <img src="https://i.imgur.com/Np55uaN.png" width="100px">
+                        {% elif others.1.decision == "Green" %}
+                            <img src="https://i.imgur.com/qUusWsT.png" width="100px">
+                        {% elif others.1.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/sNrGnRj.png" width="100px">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row" style="font-size:0px">
+                    <div class="column" style="font-size:0px">
+                        {% if player.decision == "Purple" %}
+                            <img src="https://i.imgur.com/Wl0rsVf.png" width="100px">
+                        {% elif player.decision == "Green" %}
+                            <img src="https://i.imgur.com/QiNgizb.png" width="100px">
+                        {% elif player.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/BKSqy7s.png" width="100px">
+                        {% endif %}
+                        {% if others.2.decision == "Purple" %}
+                            <img src="https://i.imgur.com/axFijmE.png" width="100px">
+                        {% elif others.2.decision == "Green" %}
+                            <img src="https://i.imgur.com/xqIrp7K.png" width="100px">
+                        {% elif others.2.decision == "Yellow" %}
+                            <img src="https://i.imgur.com/NHYHRPd.png" width="100px">
+                        {% endif %}
+                    </div>
+                </div>
+            </td><td></td></tr>
+        {% endif %}
+
+    </table>
+    <p></p>
+
+    {% next_button %}
+
+    {% include Constants.instructions_new_template %}
+
+
+{% endblock %}

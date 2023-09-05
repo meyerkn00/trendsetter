@@ -1,0 +1,111 @@
+
+
+{% load staticfiles otree_tags %}
+
+{% block app_styles %}
+<link href="{% static 'otreeutils/understanding.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block app_scripts %}
+<script src="{% static 'otreeutils/understanding.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<table class="table-condensed" style="width:500px; margin-top:20px;">
+    <!--Self = Q -->
+    {% if player.id_in_group == 1 %}
+        <tr><td>
+            <div class="row" style="font-size:0px">
+                <div class="column" style="font-size:0px">
+                    <!--Player's decision is Purple-->
+                    <img src="https://i.imgur.com/dPtodW2.png" width="100px">
+                    <!--Adjacent Player's decision is Green-->
+                    <img src="https://i.imgur.com/5Vr2gJK.png" width="100px">
+                </div>
+            </div>
+            <div class="row" style="font-size:0px">
+                <div class="column" style="font-size:0px">
+                    <!--Adjacent Player's decision is Yellow-->
+                    <img src="https://i.imgur.com/TqllzJf.png" width="100px">
+                    <img src="https://i.imgur.com/NWEao8L.png" width="100px">
+                </div>
+            </div>
+        </td><td></td></tr>
+    <!--Self = R -->
+    {% elif player.id_in_group == 2 %}
+        <tr><td>
+            <div class="row" style="font-size:0px">
+                <div class="column" style="font-size:0px">
+                    <!--Adjacent player's decision is Green-->
+                    <img src="https://i.imgur.com/WSeCwxy.png" width="100px">
+                    <!--Self's decision is Purple-->
+                    <img src="https://i.imgur.com/wHVe7qB.png" width="100px">
+                </div>
+            </div>
+            <div class="row" style="font-size:0px">
+                <div class="column" style="font-size:0px">
+                    <img src="https://i.imgur.com/3gSP92E.png" width="100px">
+                    <!--Adjacent player's decision is Yellow-->
+                    <img src="https://i.imgur.com/axoEGQP.png" width="100px">
+                </div>
+            </div>
+        </td><td></td></tr>
+    <!--Self = T -->
+    {% elif player.id_in_group == 3 %}
+        <tr><td>
+            <div class="row" style="font-size:0px">
+                <div class="column" style="font-size:0px">
+                    <img src="https://i.imgur.com/LIygbws.png" width="100px">
+                    <!--Adjacent player's decision is Green-->
+                    <img src="https://i.imgur.com/xVqNjyb.png" width="100px">
+                </div>
+            </div>
+            <div class="row" style="font-size:0px">
+                <div class="column" style="font-size:0px">
+                    <!--Adjacent player's decision is Yellow-->
+                    <img src="https://i.imgur.com/wxX6OvX.png" width="100px">
+                    <!--Self's decision is Purple-->
+                    <img src="https://i.imgur.com/9mhJNYs.png" width="100px">
+                </div>
+            </div>
+        </td><td></td></tr>
+    <!--Self = S -->
+    {% elif player.id_in_group == 4 %}
+        <tr><td>
+            <div class="row" style="font-size:0px">
+                <div class="column" style="font-size:0px">
+                    <!--Adjacent player's decision is Yellow-->
+                    <img src="https://i.imgur.com/kJYRI37.png" width="100px">
+                    <img src="https://i.imgur.com/BWBQ4xI.png" width="100px">
+                </div>
+            </div>
+            <div class="row" style="font-size:0px">
+                <div class="column" style="font-size:0px">
+                    <!--Player's decision is Purple-->
+                    <img src="https://i.imgur.com/5orFdaP.png" width="100px">
+                    <!--Adjacent player's decision is Green-->
+                    <img src="https://i.imgur.com/AhbFD2C.png" width="100px">
+                </div>
+            </div>
+        </td><td></td></tr>
+    {% endif %}
+</table>
+
+<table style="border: 1px">
+    <col width="500">
+    <col width="50">
+
+    <tr>
+        <th>{{ form.Q.label }}</th>
+        <th>{{ form.Q }}</th>
+    </tr>
+</table>
+
+
+{% next_button %}
+
+
+    {% include Constants.instructions_template %}
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Survey
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        Please answer the following questions.
+    </p>
+
+<style>
+      table, td, th {
+      padding: 15px;
+      border: 1px solid #1c87c9;
+      border-radius: 2px;
+      text-align: center;
+      }
+</style>
+
+<table style="border: 1px">
+    <col>
+    <col width="100">
+    <col width="90">
+    <col width="90">
+    <col width="100">
+    <col width="90">
+    <col width="90">
+    <col width="100">
+    <tr>
+        <th></th>
+        <th style="text-align: center">1 = Not at all true</th>
+        <th style="text-align: center">2</th>
+        <th style="text-align: center">3</th>
+        <th style="text-align: center">4 = Somewhat true</th>
+        <th style="text-align: center">5</th>
+        <th style="text-align: center">6</th>
+        <th style="text-align: center">7 = Very true</th>
+    </tr>
+    <tr>
+        <th>{{ form.autgen_1_1.label }}</th>
+        {% for choice in form.autgen_1_1 %}
+            <td align="center">{{ choice }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>{{ form.autgen_1_2.label }}</th>
+        {% for choice in form.autgen_1_2 %}
+            <td align="center">{{ choice }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>{{ form.autgen_1_3.label }}</th>
+        {% for choice in form.autgen_1_3 %}
+            <td align="center">{{ choice }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>{{ form.autgen_1_4.label }}</th>
+        {% for choice in form.autgen_1_4 %}
+            <td align="center">{{ choice }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>{{ form.autgen_1_5.label }}</th>
+        {% for choice in form.autgen_1_5 %}
+            <td align="center">{{ choice }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>{{ form.autgen_1_6.label }}</th>
+        {% for choice in form.autgen_1_6 %}
+            <td align="center">{{ choice }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>{{ form.autgen_1_7.label }}</th>
+        {% for choice in form.autgen_1_7 %}
+            <td align="center">{{ choice }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>{{ form.autgen_1_8.label }}</th>
+        {% for choice in form.autgen_1_8 %}
+            <td align="center">{{ choice }}</td>
+        {% endfor %}
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+
+    {% next_button %}
+{% endblock %}

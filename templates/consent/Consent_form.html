@@ -1,0 +1,70 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Informed Consent Form
+{% endblock %}
+
+{% block content %}
+
+<p>
+We are asking you to participate in a research study. This study is being led by Cristina Bicchieri, a professor at the University of Pennsylvania.
+</p>
+<h4>
+What the Study is About
+</h4>
+<p>
+The purpose of this research is to learn about social decision-making.
+We will ask you to complete a brief survey either before or after you are asked to iteratively choose colors from a list of three (green, purple, and yellow) alongside other members of your assigned group.
+</p>
+<h4>
+Risks and Discomforts
+</h4>
+<p>
+We do not anticipate any risks from participating in this research.
+</p>
+<h4>
+Benefits 
+</h4>
+<p>
+Information from this study may benefit other people now or in the future by providing useful insights about decision-making in groups.
+</p>
+<h4>
+Compensation for Participation 
+</h4>
+<p>
+Subjects will be compensated between $4 and $6.80 for their participation, depending on performance. 
+</p>
+<h4>
+Privacy/Confidentiality/Data Security
+</h4>
+<p>
+The data collected will not be identifiable and cannot be linked to you personally. Any data we collect will be stored in a password protected folder to which only the researchers have access.
+We anticipate that your participation in this experiment presents no greater risk than everyday use of a computer.
+</p>
+<h4>
+Sharing De-identified Data Collected in this Research 
+</h4>
+<p>
+De-identified data from this study may be shared with the research community at large to advance science. No one will be able to identify you from the information we share.
+Your participation in this research is voluntary. You have the right to withdraw at any point during the study, for any reason, and without any prejudice.
+
+If you have questions
+The contact for this study is Jack Goldberg, a research specialist at the University of Pennsylvania. If you have questions, you may contact Jack at goldbe3@upenn.edu. If you have any questions or concerns regarding your rights as a subject in this study at any time before, during or after participation, please contact the Institutional Review Board (IRB) at (215) 898-2614 for assistance.
+</p>
+<h4>
+Statement of Consent
+</h4>
+<p>
+I have read the above information and I consent to take part in the study. 
+</p>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" required name="signature">
+  <label class="form-check-label">
+    By checking this box I hereby consent.
+  </label>
+
+    {% next_button %}
+
+{% endblock %}
