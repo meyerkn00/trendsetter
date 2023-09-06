@@ -41,7 +41,7 @@ In the second block, the participants are given the opportunity to earn more tha
 - You’ll have to regenerate the links if you reset the database
 
 ## Code Documentation
-*This is a WIP, started 9/6/2023*
+*This is a WIP, started 9/6/2023. I am at least the third person to have worked on this project, and documentation has been sparse up until this point. I am hoping this clears some things up.*
 
 ### List of files/folders that I think are unrelated to the current project
 *proposed solution: leave as-is for now but in the future put into an examples folder so they don't clog up the main folder*
@@ -67,14 +67,14 @@ In the second block, the participants are given the opportunity to earn more tha
 - otreeutils
 - admin_extensions
 - Procfile
+- \_rooms
+- payment_info
 
 ### Files/Folders that are likely used but I don't understand
-*proposed: either look into more or not, either way don't touch*
+*proposed: work through these files and sort them into the other categories*
 - \_builtin
-- \_rooms
 - \_static
 - \_templates
-- payment_info
 - Heroku | Invoice.pdf
 
 ### Files/Folders that are definitely used
