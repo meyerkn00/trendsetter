@@ -113,7 +113,7 @@ class Player(BasePlayer):
 
     autgen_2_3 = models.IntegerField(
         choices=Constants.zerotoseven_ints,
-        label='I am certain that I can accomplush my goals.',
+        label='I am certain that I can accomplish my goals.',
         widget=widgets.RadioSelect
     )
 
@@ -125,7 +125,7 @@ class Player(BasePlayer):
 
     autgen_2_5 = models.IntegerField(
         choices=Constants.zerotoseven_ints,
-        label='Thanks to my resourcefullness, I can handle unforeseen situations.',
+        label='Thanks to my resourcefulness, I can handle unforeseen situations.',
         widget=widgets.RadioSelect
     )
 
