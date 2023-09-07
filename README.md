@@ -24,15 +24,15 @@ In the second block, the participants are given the opportunity to earn more tha
 
 ### Deployment Instructions
 
-- Install Anaconda for dependency management
-- Install oTree
-- Create environment.yml file
-	- name: trend
-	- dependencies:
-		- python=3.11.2
-- Activate environment with common: conda activate trend
-- Edit the code as you wish.
-- Test code with otree devserver
+- open a terminal file inside the trendsetter folder
+	- If environment is not built:
+		- create the environment "conda env create -f environment.yml"
+			- this requires that anaconda is installed as well as python 3.11
+- activate the environment "conda activate trendenv"
+	- if otree not installed
+		- install otree "pip3 install -U otree"
+- Once you are ready, call "otree zip"
+
 - When ready call otree zip to zip the files.
 - Upload to Otreehub in the trendsetters project.
 	- *Note to self, where does Heroku come into play?*
@@ -104,3 +104,21 @@ In the second block, the participants are given the opportunity to earn more tha
 ### Other
 - LICENSE
 - requirements.txt
+
+### Deployment Instructions - old
+
+- Install Anaconda for dependency management
+- Install oTree
+- Create environment.yml file
+	- name: trend
+	- dependencies:
+		- python=3.11.2
+- Activate environment with common: conda activate trend
+- Edit the code as you wish.
+- Test code with otree devserver
+- When ready call otree zip to zip the files.
+- Upload to Otreehub in the trendsetters project.
+	- *Note to self, where does Heroku come into play?*
+	- *Second note, this could also be deployed from Github, but I assume that process is more complicated*
+- Reset the database
+- You’ll have to regenerate the links if you reset the database
