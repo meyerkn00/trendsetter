@@ -48,10 +48,11 @@ In the second block, the participants are given the opportunity to earn more tha
 	- If environment is not built:
 		- create the environment "conda env create -f environment.yml"
 			- this requires that anaconda is installed as well as python 3.11
-- activate the environment "conda activate trend"
+- activate the environment "conda activate trendenv"
 	- if otree not installed
 		- install otree "pip3 install -U otree"
-- launch otree "otree devserver
+- TO TEST: "otree devserver"
+- TO DELIVER: "otree zip"
 - in browser, open http://localhost:8000/
 
 ### List of files/folders that I think are unrelated to the current project
@@ -89,7 +90,7 @@ In the second block, the participants are given the opportunity to earn more tha
 - Heroku | Invoice.pdf
 
 ### Files/Folders that are definitely used
-*Don't touch!*
+*Don't touch! This doesn't include files that are generated during the running of the program, those are in the .gitignore*
 - survey
 - end
 - consent
