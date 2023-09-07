@@ -1,3 +1,6 @@
+# OTree zip files
+*.otreezip
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -43,6 +43,17 @@ In the second block, the participants are given the opportunity to earn more tha
 ## Code Documentation
 *This is a WIP, started 9/6/2023. I am at least the third person to have worked on this project, and documentation has been sparse up until this point. I am hoping this clears some things up.*
 
+### How to launch a local test
+- open a terminal file inside the trendsetter folder
+	- If environment is not built:
+		- create the environment "conda env create -f environment.yml"
+			- this requires that anaconda is installed as well as python 3.11
+- activate the environment "conda activate trend"
+	- if otree not installed
+		- install otree "pip3 install -U otree"
+- launch otree "otree devserver
+- in browser, open http://localhost:8000/
+
 ### List of files/folders that I think are unrelated to the current project
 *proposed solution: leave as-is for now but in the future put into an examples folder so they don't clog up the main folder*
 - volunteer_dilemma
