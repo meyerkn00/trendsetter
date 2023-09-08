@@ -75,6 +75,16 @@ In the second block, the participants are given the opportunity to earn more tha
 - TO DELIVER: "otree zip"
 - in browser, open http://localhost:8000/
 
+### Known Errors
+- once you have launched a session, going to the "report" tab of the overview page causes an unhandled error
+	- From Sentry:
+> UndefinedVariable
+> otree.views.admin.AdminReport
+> Cannot resolve the variable 'decisionlist' (line 4, in "decisionlist")
+ 	- Ignore for now, just don't use report tab
+
+## File Overview
+
 ### List of files/folders that I think are unrelated to the current project
 *proposed solution: leave as-is for now but in the future put into an examples folder so they don't clog up the main folder. It looks like these are test games from OTree, and could be of use in designing future games. That said, they don't need to be in the main path.*
 - volunteer_dilemma
