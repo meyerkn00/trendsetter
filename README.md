@@ -39,7 +39,7 @@ In the second block, the participants are given the opportunity to earn more tha
 	- Click "deploy"
 - Upload your otreezip file and it will restart the server
 - Click "reset DB"
-	- **note: This will delete all of the current data in the DB**
+	- **note: This will irreversibly delete all of the current data in the DB**
 		- the DB plan that we are currently using has a limit of 10k rows. We hit that in ~1 year (maybe less, but it resets with each DB reset) and were at risk of the DB no longer writing. Just keep that in mind when you are working. This can be checked by clicking the Postgres add-on in Heroku
 		- Jack warned me that the DB can sometimes time out and cause an error which requires the DB to be reset. If you see such an error, reset the DB (I wonder if this and the above point are related).
 		- You’ll have to regenerate the links if you reset the database

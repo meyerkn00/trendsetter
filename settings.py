@@ -6,25 +6,34 @@ SESSION_CONFIGS = [
         name='complete',
         display_name="Complete",
         num_demo_participants=4,
-        app_sequence=['consent', 'complete_understanding_b1', 'complete_block1', 'complete_understanding_b2', 'complete_block2', 'complete_understanding_b3', 'complete_block3', 'complete_understanding_b4', 'complete_block4','complete_understanding_b5', 'complete_block5', 'complete_understanding_b6', 'complete_block6', 'survey', 'end']
+        app_sequence=['consent', 'complete_understanding_b1', 'complete_block1', 'complete_understanding_b2', \
+        'complete_block2', 'complete_understanding_b3', 'complete_block3', 'complete_understanding_b4', \
+        'complete_block4','complete_understanding_b5', 'complete_block5', 'complete_understanding_b6', \
+        'complete_block6', 'survey', 'end']
     ), 
     dict(
         name='line',
         display_name="Line",
         num_demo_participants=4,
-        app_sequence=['consent','line_understanding_b1', 'line_block1', 'line_understanding_b2', 'line_block2', 'line_understanding_b3', 'line_block3', 'line_understanding_b4', 'line_block4', 'line_understanding_b5', 'line_block5', 'line_understanding_b6', 'line_block6' , 'survey','end']
+        app_sequence=['consent','line_understanding_b1', 'line_block1', 'line_understanding_b2', \
+        'line_block2', 'line_understanding_b3', 'line_block3', 'line_understanding_b4', 'line_block4', \
+        'line_understanding_b5', 'line_block5', 'line_understanding_b6', 'line_block6' , 'survey','end']
     ),
     dict(
     name='star',
     display_name="Star",
     num_demo_participants=4,
-    app_sequence=['consent','star_understanding_b1', 'star_block1', 'star_understanding_b2', 'star_block2', 'star_understanding_b3', 'star_block3', 'star_understanding_b4', 'star_block4', 'star_understanding_b5', 'star_block5', 'star_understanding_b6', 'star_block6' , 'survey','end']
+    app_sequence=['consent','star_understanding_b1', 'star_block1', 'star_understanding_b2', 'star_block2', \
+    'star_understanding_b3', 'star_block3', 'star_understanding_b4', 'star_block4', 'star_understanding_b5', \
+    'star_block5', 'star_understanding_b6', 'star_block6' , 'survey','end']
     ), 
     dict(
     name='circle',
     display_name="Circle",
     num_demo_participants=4,
-    app_sequence=['consent','circle_understanding_b1', 'circle_block1', 'circle_understanding_b2', 'circle_block2', 'circle_understanding_b3', 'circle_block3', 'circle_understanding_b4', 'circle_block4', 'circle_understanding_b5', 'circle_block5', 'circle_understanding_b6', 'circle_block6' , 'survey','end']
+    app_sequence=['consent','circle_understanding_b1', 'circle_block1', 'circle_understanding_b2', \
+    'circle_block2', 'circle_understanding_b3', 'circle_block3', 'circle_understanding_b4', \
+    'circle_block4', 'circle_understanding_b5', 'circle_block5', 'circle_understanding_b6', 'circle_block6' , 'survey','end']
     ),
     dict(
     name='survey',
