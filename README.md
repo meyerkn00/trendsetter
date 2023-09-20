@@ -60,9 +60,6 @@ In the second block, the participants are given the opportunity to earn more tha
 	- OTREE_PRODUCTION - can be 1 or 0, set to 1 on prodserver to hide debug info
 	- if there are any permissions requested by the app itself, they can probably be found here
 
-## Code Documentation
-*This is a WIP, started 9/6/2023. I am at least the third person to have worked on this project, and documentation has been sparse up until this point. I am hoping this clears some things up.*
-
 ### How to launch a local test
 - open a terminal file inside the trendsetter folder
 	- If environment is not built:
@@ -82,6 +79,21 @@ In the second block, the participants are given the opportunity to earn more tha
 > otree.views.admin.AdminReport
 > Cannot resolve the variable 'decisionlist' (line 4, in "decisionlist")
  	- Ignore for now, just don't use report tab
+
+## Code Documentation
+*This is a WIP, started 9/6/2023. I am at least the third person to have worked on this project, and documentation has been sparse up until this point. I am hoping this clears some things up.*
+
+### Code flow overview
+The main file is settings.py. This outlines each of the "games" within the experiment. They are the following: Complete, Circle, Star, Line, and Survey. The last is a test to just run through the survey section which is at the end of each real game.
+
+In the settings.py file there is an outline of the flow of each game, which proceeds through sections. This is the actual flow of the survey. A typical flow is: consent -> understanding1 -> block 1 -> understanding 2... -> survey -> end
+
+Block 1 and understanding 1 are unique, as they have slightly different flows from the rest of the survey (block 1 has different payoffs, and understanding 1 has a large attention check/understanding confirmation section). Blocks 2-6 and understanding 2-6 are basically identical.
+
+### Images
+For reference, these images are all hosted on imgur and used for all of the network images, e.g. in the overview section, but also in all of the payout notifications and understanding questions. **I DO NOT KNOW WHO IS HOSTING THIS** or what account, I assume there is an imgur account floating around somewhere that has all of these files, but I have been unable to find it. In case the account gets removed for inactivity I am backing everything up.
+
+I made a backup of each image used. It is stored based on network and then whether it is used in the "block" series or the "understanding" series. I pulled from block 1 and understanding 1, since it seems like everything else is just copied off of that. In the html files themselves there appear to be sections, so I broke it down by that and then visually by subsection so there weren't too many images in one folder. Annoyingly they are now jumbled within each folder but since each secton is ~6 images max that isn't too bad.
 
 ## File Overview
 
