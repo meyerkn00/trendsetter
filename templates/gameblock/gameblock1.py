@@ -1,7 +1,7 @@
 #from ._builtin import Page, WaitPage
 from otree.api import *
 #from .models import Constants
-
+from .GameBlock import gameblock1
 
 #from otreeutils.pages import AllGroupsWaitPage, ExtendedPage, UnderstandingQuestionsPage, APPS_DEBUG
 #from otree.api import (
@@ -22,24 +22,24 @@ doc = """
 This is a coordination game with 4 players.
 """
 
-class GameBlock(network, blocknum, apptype):
+class GameBlock:
 	def __init__(self):
 		self.network = network
 		self.blocknum = blocknum
 		self.apptype = apptype
-
+		# Importing values from the specific app we are currently in.
 		self.BaseConstants = BaseConstants
 		self.BaseSubsession = BaseSubsession
 		self.BaseGroup = BaseGroup
 		self.BasePlayer = BasePlayer
 	# NOTE: Name changes here
 	class Constants(BaseConstants):
-		name_in_url = 'complete_block1'
+		name_in_url = f'{network}_block{blocknum}'
 		players_per_group = 4
 		num_rounds = 10
 
 		#instructions_template = 'complete_block1/instructions.html'
-		instructions_new_template = 'complete_block1/instructions_new.html'
+		instructions_new_template = f'{name_in_url}/instructions_new.html'
 
 		# payoffs if player picks green""",
 		#onegreen_payoff = c(0)
