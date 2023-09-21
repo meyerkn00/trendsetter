@@ -2,7 +2,7 @@
 .idea
 
 # Mac folder files
-*.DS_Store
+.DS_Store
 
 # OTree zip files
 *.otreezip
