@@ -40,6 +40,13 @@ SESSION_CONFIGS = [
     display_name="Survey",
     num_demo_participants=4,
     app_sequence=['survey','end']
+    ),
+    dict(
+    name='complete_test',
+    display_name="complete_test",
+    num_demo_participants=4,
+    app_sequence=['complete_block1_test','end']
+
     )
 ]
 
