@@ -6,21 +6,10 @@ import pandas as pd
 import random
 import sys
 
-sys.path.append("/Users/meyerkn/Documents/GitHub") 
-#from .models import Constants
-from templates import gameblock1
+sys.path.append("/Users/meyerkn/Documents/GitHub/Trendsetter") 
 
+from templates import gameblock as gb
 
-#from otreeutils.pages import AllGroupsWaitPage, ExtendedPage, UnderstandingQuestionsPage, APPS_DEBUG
-#from otree.api import (
-#    models,
-#    widgets,
-#    BaseConstants,
-#    BaseSubsession,
-#    BaseGroup,
-#    BasePlayer,
-#    Currency as c,
-#    currency_range,
 
 import numpy as np
 import pandas as pd
@@ -30,31 +19,35 @@ doc = """
 This is a coordination game with 4 players.
 """
 
-class Constants(GameBlock.Constants):
+network = "complete"
+blocknum = 1
+apptype = "gameblock"
+
+class Constants(gb.Constants):
     pass
 
-class Subsession(GameBlock.Subsession):
+class Subsession(gb.Subsession):
     pass
 
-class Group(GameBlock.Group):
+class Group(gb.Group):
     pass
 
-class Player(GameBlock.Player):
+class Player(gb.Player):
     pass
 
-class MyWaitPage(GameBlock.WaitPage):
+class MyWaitPage(gb.WaitPage):
     pass
 
-class Decision(GameBlock.Page):
+class Decision(gb.Page):
     pass
 
-class ResultsWaitPage(GameBlock.WaitPage):
+class ResultsWaitPage(gb.WaitPage):
     pass
 
-class Results(GameBlock.Page):
+class Results(gb.Page):
     pass
 
-class newResults(GameBlock.Page):
+class newResults(gb.Page):
     pass
 
-page_sequence = GameBlock.page_sequence
+page_sequence = gb.page_sequence
