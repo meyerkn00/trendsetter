@@ -24,12 +24,30 @@ This is a coordination game with 4 players.
 
 
 class Constants(BaseConstants):
-    name_in_url = 'complete_block1_test'
+    name_in_url = 'complete_block1'
     players_per_group = 4
     num_rounds = 10
 
     #instructions_template = 'complete_block1/instructions.html'
-    instructions_new_template = f'{name_in_url}/instructions_new.html'
+    instructions_new_template = 'complete_block1/instructions_new.html'
+
+    # payoffs if player picks green""",
+    #onegreen_payoff = c(0)
+    #twogreen_payoff = c(0)
+    #threegreen_payoff = c(0)
+    #fourgreen_payoff = c(0)
+
+    # payoffs if player picks purple
+    #onepurple_payoff = c(0)
+    #twopurple_payoff = c(0)
+    #threepurple_payoff = c(0)
+    #fourpurple_payoff = c(0)
+
+    # payoffs if player picks yellow
+    #oneyellow_payoff = c(3)
+    #twoyellow_payoff = c(6)
+    #threeyellow_payoff = c(9)
+    #fouryellow_payoff = c(12)
 
 
 class Subsession(BaseSubsession):
