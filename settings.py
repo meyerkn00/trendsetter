@@ -40,6 +40,13 @@ SESSION_CONFIGS = [
     display_name="Survey",
     num_demo_participants=4,
     app_sequence=['survey','end']
+    ),
+    dict(
+    name='complete_test',
+    display_name="complete_test",
+    num_demo_participants=4,
+    app_sequence=['complete_block1_test','end']
+
     )
 ]
 
@@ -52,7 +59,7 @@ SESSION_CONFIGS = [
 # e.g. self.session.config['participation_fee']
 
 SESSION_CONFIG_DEFAULTS = dict(
-    real_world_currency_per_point=1.00, participation_fee=0.00, doc=""
+    real_world_currency_per_point=0.20, participation_fee=10.00, doc=""
 )
 
 PARTICIPANT_FIELDS = ["past_group_id"]

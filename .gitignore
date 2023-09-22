@@ -1,6 +1,7 @@
-# Mac specific files
-
+#PyCharm editor files
 .idea
+
+# Mac folder files
 **/.DS_Store
 
 # OTree zip files
