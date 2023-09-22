@@ -45,7 +45,7 @@ SESSION_CONFIGS = [
     name='complete_test',
     display_name="Complete Test",
     num_demo_participants=4,
-    app_sequence=['consenttest','complete_block1_understanding_b1test','complete_block1_test','end']
+    app_sequence=['consent_test','complete_understanding_b1_test','complete_block1_test','end']
 
     )
 ]

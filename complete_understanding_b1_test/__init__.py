@@ -12,7 +12,7 @@ colors = ['Purple','Green','Yellow','Unknown']
 players = ['Q', 'R', 'T', 'S', 'Unknown']
 
 class Constants(BaseConstants):
-    name_in_url = 'complete_understanding_b1'
+    name_in_url = 'complete_understanding_b1_test'
     players_per_group = 4
     num_rounds = 1
 

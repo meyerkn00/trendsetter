@@ -3,7 +3,7 @@ from otree.api import *
 
 
 class Constants(BaseConstants):
-    name_in_url = 'consent'
+    name_in_url = 'consent_test'
     players_per_group = 4
     num_rounds = 1
 

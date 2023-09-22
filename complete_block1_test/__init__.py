@@ -27,9 +27,11 @@ class Constants(BaseConstants):
     name_in_url = 'complete_block1_test'
     players_per_group = 4
     num_rounds = 10
+    block_number = 1
+    network_name = "complete"
 
     #instructions_template = 'complete_block1/instructions.html'
-    instructions_new_template = f'{name_in_url}/instructions_new.html'
+    instructions_new_template = f'{name_in_url}/instructions_new1.html'
 
 
 class Subsession(BaseSubsession):
