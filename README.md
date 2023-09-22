@@ -61,7 +61,7 @@ In the second block, the participants are given the opportunity to earn more tha
 	- if there are any permissions requested by the app itself, they can probably be found here
 
 ### How to launch a local test
-- open a terminal file inside the trendsetter folder
+- In Terminal, navigate to the trendsetters folder
 	- If environment is not built:
 		- create the environment "conda env create -f environment.yml"
 			- this requires that anaconda is installed as well as python 3.11
@@ -69,7 +69,6 @@ In the second block, the participants are given the opportunity to earn more tha
 	- if otree not installed
 		- install otree "pip3 install -U otree"
 - TO TEST: "otree devserver"
-- TO DELIVER: "otree zip"
 - in browser, open http://localhost:8000/
 
 ### Known Errors
@@ -98,7 +97,7 @@ I made a backup of each image used. It is stored based on network and then wheth
 ## File Overview
 
 ### List of files/folders that I think are unrelated to the current project
-*proposed solution: leave as-is for now but in the future put into an examples folder so they don't clog up the main folder. It looks like these are test games from OTree, and could be of use in designing future games. That said, they don't need to be in the main path.*
+*9/22/23: I put these games inside OTree Demo Code folder*
 - volunteer_dilemma
 - trust_simple
 - trust
