@@ -43,9 +43,9 @@ SESSION_CONFIGS = [
     ),
     dict(
     name='complete_test',
-    display_name="complete_test",
+    display_name="Complete Test",
     num_demo_participants=4,
-    app_sequence=['complete_block1_test','end']
+    app_sequence=['consenttest','complete_block1_understanding_b1test','complete_block1_test','end']
 
     )
 ]
