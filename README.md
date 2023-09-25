@@ -97,7 +97,7 @@ I made a backup of each image used. It is stored based on network and then wheth
 ## File Overview
 
 ### List of files/folders that I think are unrelated to the current project
-*9/22/23: I put these games inside OTree Demo Code folder*
+*9/22/23: I put these games inside OTree Demo Code folder to get them out of the way. These are mainly OTree demos and might be useful as reference but are not used by the experiment.*
 - volunteer_dilemma
 - trust_simple
 - trust

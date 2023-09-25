@@ -31,7 +31,8 @@ class Constants(BaseConstants):
     network_name = "complete"
 
     #instructions_template = 'complete_block1/instructions.html'
-    instructions_new_template = f'{name_in_url}/instructions_new1.html'
+    instructions_new_template = '_templates/global/instructions_template.html'
+    decision_template = '_templates/global/Decision.html'
 
 
 class Subsession(BaseSubsession):

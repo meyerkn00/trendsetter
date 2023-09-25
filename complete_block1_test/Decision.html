@@ -1,19 +1,11 @@
-{% extends "global/Page.html" %}
 {% load otree %}
 
 {% block title %}
-    Decision - Block 1, Round {{ player.round_number }}
+    Decision - Block {{ Constants.block_number }}, Round {{ player.round_number }}
 {% endblock %}
 
 {% block content %}
 
-    <p style="color:red">Maximum payoff: 12 points</p>
-
-    {% formfield player.decision label="What color do you choose?" %}
-
-
-    {% next_button %}
-
-    {% include Constants.instructions_new_template %}
+    {% include Constants.decision_template %}
 
 {% endblock %}

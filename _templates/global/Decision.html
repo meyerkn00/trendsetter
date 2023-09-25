@@ -1,0 +1,18 @@
+{% load otree %}
+
+    <p style="color:red">Maximum payoff: 
+        {% if Constants.block_number == 1 %}
+            12
+        {% elif Constants.block_number < 7 %}
+            28
+        {% else %}
+            ERROR
+        {% endif %}
+     points</p>
+
+    {% formfield player.decision label="What color do you choose?" %}
+
+
+    {% next_button %}
+
+    {% include Constants.instructions_new_template %}

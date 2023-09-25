@@ -129,4 +129,4 @@ class Demographics(Page):
  
         
 
-page_sequence = [Consent_form, Payment_info]
+page_sequence = [Consent_form]
