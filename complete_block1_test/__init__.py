@@ -124,10 +124,7 @@ def set_payoff(player: Player):
 
 
 
-    
-
-
-   
+  
 # def get_payoff(self):
 #     greenval = 0
 #     purpleval = 0
