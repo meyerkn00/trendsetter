@@ -2,13 +2,21 @@
 {% load otree %}
 
 {% block title %}
-    Results - Block 1, Round {{ player.round_number }}
+    Results - Block {{ Constants.block_number }}, Round {{ player.round_number }}
 {% endblock %}
 
 {% block content %}
   
   
-    <p style="color:red">Maximum payoff: 12 points</p>
+    <p style="color:red">Maximum payoff: 
+        {% if Constants.block_number == 1 %}
+            12
+        {% elif Constants.block_number < 7 %}
+            28
+        {% else %}
+            ERROR
+        {% endif %}
+     points</p>
 
     <table class="table-condensed" style="width:500px; margin-top:20px;">
         <tr><td>Your choice:</td><td>{{ player.decision }}</td></tr>
