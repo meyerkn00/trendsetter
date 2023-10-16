@@ -26,7 +26,7 @@ In the second block, the participants are given the opportunity to earn more tha
 - open a terminal file inside the trendsetter folder
 	- If environment is not built:
 		- create the environment "conda env create -f environment.yml"
-			- this requires that anaconda is installed as well as python 3.11
+			- this requires that anaconda is installed (anaconda installs python 3.11 so you don't need to install it separately)
 - activate the environment "conda activate trendenv"
 	- if otree not installed
 		- install otree "pip3 install -U otree"
