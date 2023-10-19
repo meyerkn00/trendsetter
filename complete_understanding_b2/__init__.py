@@ -9,13 +9,14 @@ This is a coordination game with 4 players.
 
 
 class Constants(BaseConstants):
-    name_in_url = 'complete_understanding_b2'
     players_per_group = 4
     num_rounds = 1
+    block_number = 2
+    network_name = "complete"
+    name_in_url = f"{network_name}_understanding_b{block_number}"
 
-    instructions_new_template = 'complete_understanding_b2/instructions_new.html'
-    instructions_template = 'complete_understanding_b2/instructions.html'
-
+    instructions_template = '_templates/global/instructions_template.html'
+    instructions_new_template = '_templates/global/repeat_instructions_template.html'
 
 class Subsession(BaseSubsession):
     pass

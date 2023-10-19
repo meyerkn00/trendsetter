@@ -12,13 +12,14 @@ colors = ['Purple','Green','Yellow','Unknown']
 players = ['Q', 'R', 'T', 'S', 'Unknown']
 
 class Constants(BaseConstants):
-    name_in_url = 'complete_understanding_b1'
     players_per_group = 4
     num_rounds = 1
+    block_number = 1
+    network_name = "complete"
+    name_in_url = f"{network_name}_understanding_b{block_number}"
 
-    instructions_new_template = 'complete_understanding_b1/instructions_new.html'
-    instructions_template = 'complete_understanding_b1/instructions.html'
-
+    instructions_template = '_templates/global/instructions_template.html'
+    instructions_new_template = '_templates/global/repeat_instructions_template.html'
 
 class Subsession(BaseSubsession):
     pass
