@@ -11,7 +11,7 @@ This is a coordination game with 4 players.
 class Constants(BaseConstants):
     players_per_group = 4
     num_rounds = 1
-    block_number = 1
+    block_number = 4
     network_name = "line"
     name_in_url = f"{network_name}_understanding_b{block_number}"
 
