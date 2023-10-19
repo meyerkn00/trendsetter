@@ -40,58 +40,18 @@ The necessary change is to add to Constants both block_number and network_name
     <p>
         The diagram below portrays the information flow between
         the {{ Constants.players_per_group }} participants. You 
-        {% if Constants.network_name == "complete" %}
-            {% if player.id_in_group == 1 %}
-                (Player Q)
-            {% elif player.id_in_group == 2 %}
-                (Player R)
-            {% elif player.id_in_group == 3 %}
-                (Player T)
-            {% elif player.id_in_group == 4 %}
-                (Player S)
-            {% else %}
-                ERROR
-            {% endif %}
-        {% elif Constants.network_name == "circle" %}
-            {% if player.id_in_group == 1 %}
-                (Player Q)
-            {% elif player.id_in_group == 2 %}
-                (Player R)
-            {% elif player.id_in_group == 3 %}
-                (Player T)
-            {% elif player.id_in_group == 4 %}
-                (Player S)
-            {% else %}
-                ERROR
-            {% endif %}
-        {% elif Constants.network_name == "line" %}
-            {% if player.id_in_group == 1 %}
-                (Player Q)
-            {% elif player.id_in_group == 2 %}
-                (Player R)
-            {% elif player.id_in_group == 3 %}
-                (Player T)
-            {% elif player.id_in_group == 4 %}
-                (Player S)
-            {% else %}
-                ERROR
-            {% endif %}
-        {% elif Constants.network_name == "star" %}
-            {% if player.id_in_group == 1 %}
-                (Player Q)
-            {% elif player.id_in_group == 2 %}
-                (Player R)
-            {% elif player.id_in_group == 3 %}
-                (Player T)
-            {% elif player.id_in_group == 4 %}
-                (Player S)
-            {% else %}
-                ERROR
-            {% endif %}
+        {% if player.id_in_group == 1 %}
+            (Player Q)
+        {% elif player.id_in_group == 2 %}
+            (Player R)
+        {% elif player.id_in_group == 3 %}
+            (Player T)
+        {% elif player.id_in_group == 4 %}
+            (Player S)
         {% else %}
             ERROR
         {% endif %}
-        will only see the colors chosen by the participants who are 
+         will only see the colors chosen by the participants who are 
         connected to you by a line in the displayed diagram 
         {% if Constants.network_name == "complete" %}
             {% if player.id_in_group == 1 %}
@@ -131,13 +91,13 @@ The necessary change is to add to Constants both block_number and network_name
             {% endif %}
         {% elif Constants.network_name == "star" %}
             {% if player.id_in_group == 1 %}
-                (Player R)
+                (Player S)
             {% elif player.id_in_group == 2 %}
-                (Player Q and Player T)
+                (Player S)
             {% elif player.id_in_group == 3 %}
-                (Player R and Player S)
+                (Player S)
             {% elif player.id_in_group == 4 %}
-                (Player T)
+                (Player Q, Player R, and Player T)
             {% else %}
                 ERROR
             {% endif %}
