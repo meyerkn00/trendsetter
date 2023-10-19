@@ -66,13 +66,13 @@ This version is used when appending instructions to the bottom of other forms.
         connected to you by a line in the displayed diagram 
         {% if Constants.network_name == "complete" %}
             {% if player.id_in_group == 1 %}
-                (Players R, T, and S).
+                (Players R, T, and S)
             {% elif player.id_in_group == 2 %}
-                (Players Q, T, and S).
+                (Players Q, T, and S)
             {% elif player.id_in_group == 3 %}
-                (Players Q, R, and S).
+                (Players Q, R, and S)
             {% elif player.id_in_group == 4 %}
-                (Players Q, R, and T).
+                (Players Q, R, and T)
             {% else %}
                 ERROR
             {% endif %}
