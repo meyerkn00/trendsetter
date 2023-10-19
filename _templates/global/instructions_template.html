@@ -23,7 +23,13 @@ The necessary change is to add to Constants both block_number and network_name
         of the experiment to determine your payment.
     </p>
     <p>
-        For this block of ten rounds, the maximum payoff you can earn in any round is 12 points. 1 point is equivalent to $0.20.
+        For this block of ten rounds, the maximum payoff you can earn in any round is 
+        {% if Constants.block_number == 1 %}
+        12
+        {% else %}
+        28
+        {% endif %}
+         points. 1 point is equivalent to $0.20.
         {% if Constants.block_number == 2 %}
         
         The way payoffs are calculated is not the same as in the previous block.
