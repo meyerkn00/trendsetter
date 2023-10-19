@@ -24,11 +24,11 @@ This is a coordination game with 4 players.
 
 
 class Constants(BaseConstants):
-    name_in_url = 'star_block2'
     players_per_group = 4
     num_rounds = 10
     block_number = 2
     network_name = "star"
+    name_in_url = f"{network_name}_block{block_number}"
 
     #instructions_template = 'star_block1/instructions.html'
     instructions_new_template = '_templates/global/repeat_instructions_template.html'
