@@ -12,9 +12,11 @@ class Constants(BaseConstants):
     name_in_url = 'star_understanding_b3'
     players_per_group = 4
     num_rounds = 1
+    block_number = 3
+    network_name = "star"
 
-    instructions_new_template = 'star_understanding_b3/instructions_new.html'
-    instructions_template = 'star_understanding_b3/instructions.html'
+    instructions_template = '_templates/global/instructions.html'
+    instructions_new_template = '_templates/global/repeat_instructions_template.html'
 
 
 class Subsession(BaseSubsession):
