@@ -15,7 +15,7 @@ class Constants(BaseConstants):
     block_number = 3
     network_name = "star"
 
-    instructions_template = '_templates/global/instructions.html'
+    instructions_template = '_templates/global/instructions_template.html'
     instructions_new_template = '_templates/global/repeat_instructions_template.html'
 
 
