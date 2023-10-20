@@ -95,8 +95,9 @@ class Introduction(Page):
 
     @staticmethod
     def vars_for_template(player):
-        is_first_time = True
-        return is_first_time
+        return dict(
+            is_first_time = True
+            )
 
 class Q(Page):
     def is_displayed(self):
