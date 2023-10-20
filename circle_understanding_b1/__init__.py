@@ -104,7 +104,7 @@ class Q(Page):
 
     template_name = None
     page_title = 'Comprehension Questions'
-    set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
+    set_correct_answers = True   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
 

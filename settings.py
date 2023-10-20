@@ -40,7 +40,14 @@ SESSION_CONFIGS = [
     display_name="Survey",
     num_demo_participants=4,
     app_sequence=['survey','end']
+    ),
+    dict(
+    name='circle_test',
+    display_name="Circle Test",
+    num_demo_participants=4,
+    app_sequence=['consent_test','circle_understanding_b1']
     )
+
 ]
 
 
