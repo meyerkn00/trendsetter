@@ -30,9 +30,6 @@ class Group(BaseGroup):
 
 
 
-
-
-
 class Player(BasePlayer):
 
     Q1 = models.StringField(
@@ -94,7 +91,12 @@ class MyWaitPage(WaitPage):
             participant.past_group_id = group.id
 
 class Introduction(Page):
-    pass
+    template_name = "_templates/global/introduction.html"
+
+    @staticmethod
+    def vars_for_template(player):
+        is_first_time = True
+        return is_first_time
 
 class Q(Page):
     def is_displayed(self):
