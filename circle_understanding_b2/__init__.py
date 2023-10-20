@@ -59,7 +59,7 @@ class MyWaitPage(WaitPage):
     body_text = "Waiting for other participants. If it has been awhile, refresh the page."
 
 class Introduction(Page):
-    pass
+    template_name = "_templates/global/introduction.html"
 
 class Q(Page):
     page_title = 'Comprehension Question'
