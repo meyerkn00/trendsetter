@@ -20,32 +20,32 @@ SESSION_CONFIGS = [
         'line_understanding_b5', 'line_block5', 'line_understanding_b6', 'line_block6' , 'survey','end']
     ),
     dict(
-    name='star',
-    display_name="Star",
-    num_demo_participants=4,
-    app_sequence=['consent','star_understanding_b1', 'star_block1', 'star_understanding_b2', 'star_block2', \
-    'star_understanding_b3', 'star_block3', 'star_understanding_b4', 'star_block4', 'star_understanding_b5', \
-    'star_block5', 'star_understanding_b6', 'star_block6' , 'survey','end']
+        name='star',
+        display_name="Star",
+        num_demo_participants=4,
+        app_sequence=['consent','star_understanding_b1', 'star_block1', 'star_understanding_b2', 'star_block2', \
+        'star_understanding_b3', 'star_block3', 'star_understanding_b4', 'star_block4', 'star_understanding_b5', \
+        'star_block5', 'star_understanding_b6', 'star_block6' , 'survey','end']
     ), 
     dict(
-    name='circle',
-    display_name="Circle",
-    num_demo_participants=4,
-    app_sequence=['consent','circle_understanding_b1', 'circle_block1', 'circle_understanding_b2', \
-    'circle_block2', 'circle_understanding_b3', 'circle_block3', 'circle_understanding_b4', \
-    'circle_block4', 'circle_understanding_b5', 'circle_block5', 'circle_understanding_b6', 'circle_block6' , 'survey','end']
+        name='circle',
+        display_name="Circle",
+        num_demo_participants=4,
+        app_sequence=['consent','circle_understanding_b1', 'circle_block1', 'circle_understanding_b2', \
+        'circle_block2', 'circle_understanding_b3', 'circle_block3', 'circle_understanding_b4', \
+        'circle_block4', 'circle_understanding_b5', 'circle_block5', 'circle_understanding_b6', 'circle_block6' , 'survey','end']
     ),
     dict(
-    name='survey',
-    display_name="Survey",
-    num_demo_participants=4,
-    app_sequence=['survey','end']
+        name='survey',
+        display_name="Survey",
+        num_demo_participants=4,
+        app_sequence=['survey','end']
     ),
     dict(
-    name='circle_test',
-    display_name="Circle Test",
-    num_demo_participants=4,
-    app_sequence=['consent_test','circle_understanding_b1']
+        name='circle_test',
+        display_name="Circle Test",
+        num_demo_participants=4,
+        app_sequence=['consent_test','circle_understanding_b1']
     )
 
 ]
