@@ -238,5 +238,4 @@ class S(Page):
 
         return error_messages
 
-page_sequence = [MyWaitPage, Introduction]
-# Q, R, S, T
+page_sequence = [MyWaitPage, Introduction, Q, R, S, T]
