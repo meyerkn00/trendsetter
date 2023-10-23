@@ -45,7 +45,7 @@ SESSION_CONFIGS = [
         name='circle_test',
         display_name="Circle Test",
         num_demo_participants=4,
-        app_sequence=['consent_test','circle_understanding_b1']
+        app_sequence=['consent_test', 'circle_understanding_b1', 'circle_block1']
     )
 
 ]

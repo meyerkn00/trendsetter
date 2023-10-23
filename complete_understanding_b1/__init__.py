@@ -102,7 +102,7 @@ class Q(Page):
 
     template_name = None
     page_title = 'Comprehension Questions'
-    set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
+    set_correct_answers = True   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
 
@@ -139,7 +139,7 @@ class R(Page):
         return self.id_in_group == 2
     template_name = None
     page_title = 'Comprehension Questions'
-    set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
+    set_correct_answers = True   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
     form_fields = ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9']
@@ -171,7 +171,7 @@ class R(Page):
 class T(Page):
     def is_displayed(self):
         return self.id_in_group == 3
-    template_name = None
+    template_name = True
     page_title = 'Comprehension Questions'
     set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
@@ -208,7 +208,7 @@ class S(Page):
         return self.id_in_group == 4
     template_name = None
     page_title = 'Comprehension Questions'
-    set_correct_answers = False   # do not fill out the correct answers in advance (this is for fast skipping through pages)
+    set_correct_answers = True   # do not fill out the correct answers in advance (this is for fast skipping through pages)
     form_model = 'player'
     form_field_n_wrong_attempts = 'comprehension_wrong_attempts'
     form_fields = ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9']
