@@ -151,6 +151,7 @@ class MyWaitPage(WaitPage):
         return player.round_number == 1
 
 class Decision(Page):
+    template_name = "_templates/global/decision_template.html"
     form_model = 'player'
     form_fields = ['decision']
 
