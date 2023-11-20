@@ -42,10 +42,10 @@ SESSION_CONFIGS = [
         app_sequence=['survey','end']
     ),
     dict(
-        name='circle_test',
-        display_name="Circle Test",
+        name='circle_instr',
+        display_name="Circle Instructions",
         num_demo_participants=4,
-        app_sequence=['consent_test', 'circle_understanding_b1', 'circle_block1']
+        app_sequence=['consent_test', 'circle_block1', 'circle_block2']
     )
 
 ]
