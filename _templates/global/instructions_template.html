@@ -70,13 +70,13 @@ This version is used when displaying instructions for the first time (namely, in
             {% endif %}
         {% elif Constants.network_name == "circle" %}
             {% if player.id_in_group == 1 %}
-                (Player R)
+                (Player R and Player S)
             {% elif player.id_in_group == 2 %}
                 (Player Q and Player T)
             {% elif player.id_in_group == 3 %}
                 (Player R and Player S)
             {% elif player.id_in_group == 4 %}
-                (Player T)
+                (Player Q and Player T)
             {% else %}
                 ERROR
             {% endif %}
