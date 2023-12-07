@@ -1,10 +1,4 @@
 def gamesetup(network, block):
-    from otree.api import *
-
-    import numpy as np
-    import pandas as pd
-    import random
-
     doc = """
     This is a coordination game with 4 players.
     """
