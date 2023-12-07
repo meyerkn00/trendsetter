@@ -1,8 +1,13 @@
+from otree.api import *
+
+import numpy as np
+import pandas as pd
+import random
+
 def gamesetup(network, block):
     doc = """
     This is a coordination game with 4 players.
     """
-
 
     class Constants(BaseConstants):
         players_per_group = 4

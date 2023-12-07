@@ -23,7 +23,7 @@ In the second block, the participants are given the opportunity to earn more tha
 
 ### Deployment Instructions
 
-- open a terminal file inside the trendsetter folder
+- open a terminal file inside the trendsetter folder (if using windows, open 'anaconda powershell prompt' instead)
 	- If environment is not built:
 		- create the environment "conda env create -f environment.yml"
 			- this requires that anaconda is installed (anaconda installs python 3.11 so you don't need to install it separately)
