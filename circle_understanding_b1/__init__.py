@@ -39,16 +39,16 @@ class Player(BasePlayer):
         #widget=widgets.Select
         )
 
-    Q2 =models.StringField(
+    Q2 = models.StringField(
             label ='Which player are you?',
             choices = players
         )
 
-    Q3 =  models.StringField(
+    Q3 = models.StringField(
             label = 'Whose payoffs are shown to you at the end of each round?',
             choices = {'Only your own', "Nobody's", "Everyone's", "Your own and those of players adjacent to you"}
         )
-    Q4 =  models.StringField(
+    Q4 = models.StringField(
             label =  'Can the way payoffs are calculated change within each block of ten rounds?',
             choices =  random.sample(['Yes', 'No'], 2)
         )
@@ -66,7 +66,7 @@ class Player(BasePlayer):
             label =  'Which color did Player R choose?', 
             choices =  colors
         )
-    Q8 =  models.StringField(
+    Q8 = models.StringField(
             label =  'Which color did Player S choose?', 
             choices =  colors
         )
@@ -185,15 +185,15 @@ class T(Page):
     @staticmethod
     def error_message(player, values):
         solutions = dict(
-            Q1='12 points',
-            Q2='T',
-            Q3='Only your own',
-            Q4='No',
-            Q5='Yes (and you will be told if they changed)',
-            Q6='Unknown',
-            Q7='Green',
-            Q8='Yellow',
-            Q9='Purple'
+            Q1 = '12 points',
+            Q2 = 'T',
+            Q3 = 'Only your own',
+            Q4 = 'No',
+            Q5 = 'Yes (and you will be told if they changed)',
+            Q6 = 'Unknown',
+            Q7 = 'Green',
+            Q8 = 'Yellow',
+            Q9 = 'Purple'
         )
         error_messages = dict()
 
@@ -219,15 +219,15 @@ class S(Page):
     @staticmethod
     def error_message(player, values):
         solutions = dict(
-            Q1='12 points',
-            Q2='S',
-            Q3='Only your own',
-            Q4='No',
-            Q5='Yes (and you will be told if they changed)',
-            Q6='Yellow',
-            Q7='Unknown',
-            Q8='Purple',
-            Q9='Green'
+            Q1 = '12 points',
+            Q2 = 'S',
+            Q3 = 'Only your own',
+            Q4 = 'No',
+            Q5 = 'Yes (and you will be told if they changed)',
+            Q6 = 'Yellow',
+            Q7 = 'Unknown',
+            Q8 = 'Purple',
+            Q9 = 'Green'
         )
         error_messages = dict()
 
