@@ -151,15 +151,15 @@ class R(Page):
     @staticmethod
     def error_message(player, values):
         solutions = dict(
-            Q1='12 points',
-            Q2='R',
-            Q3='Only your own',
-            Q4='No',
-            Q5='Yes (and you will be told if they changed)',
-            Q6='Green',
-            Q7='Purple',
-            Q8='Unknown',
-            Q9='Yellow'
+            Q1 = '12 points',
+            Q2 = 'R',
+            Q3 = 'Only your own',
+            Q4 = 'No',
+            Q5 = 'Yes (and you will be told if they changed)',
+            Q6 = 'Green',
+            Q7 = 'Purple',
+            Q8 = 'Unknown',
+            Q9 = 'Yellow'
         )
         error_messages = dict()
 
