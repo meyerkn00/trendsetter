@@ -11,11 +11,14 @@ def gamesetup(network, block):
 
 
     class Constants(BaseConstants):
-        name_in_url = f'{network}_block{block}'
         players_per_group = 4
         num_rounds = 10
+        block_number = block
+        network_name = network
+        name_in_url = f"{network_name}_understanding_b{block_number}"
 
-        instructions_new_template = 'complete_block1/instructions_new.html'
+        instructions_template = '_templates/global/instructions_template.html'
+        instructions_new_template = '_templates/global/repeat_instructions_template.html'
 
     class Subsession(BaseSubsession):
         def vars_for_admin_report(self):
@@ -77,9 +80,14 @@ def gamesetup(network, block):
             set_payoff(p)
 
     def set_payoff(player: Player):
-        greenval = 0
-        purpleval = 0
-        yellowval = 3
+        if block == 1:
+            greenval = 0
+            purpleval = 0
+            yellowval = 3
+        else:
+            greenval = 7
+            purpleval = 5
+            yellowval = 3
         todf = {'Green': [greenval, 2*greenval, 3*greenval, 4*greenval],
                 'Purple': [purpleval, 2*purpleval, 3*purpleval, 4*purpleval],
                 'Yellow': [yellowval, 2*yellowval, 3*yellowval, 4*yellowval]}
