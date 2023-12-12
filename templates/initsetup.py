@@ -1,10 +1,10 @@
-from otree.api import *
+if __name__ == "__main__":
+    from otree.api import *
 
-import numpy as np
-import pandas as pd
-import random
+    import numpy as np
+    import pandas as pd
+    import random
 
-def gamesetup(network, block):
     doc = """
     This is a coordination game with 4 players.
     """

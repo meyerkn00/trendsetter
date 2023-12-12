@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import random
 
-from templates.initsetup import gamesetup
+network = "complete"
+block = 1
 
-gamesetup("complete", 1)
+import templates.initsetup
