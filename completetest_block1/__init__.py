@@ -7,4 +7,4 @@ import random
 network = "complete"
 block = 1
 
-import templates.initsetup
+import initsetup.py
